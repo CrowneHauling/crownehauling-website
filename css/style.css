@@ -8,8 +8,6 @@
     --light-gray: #f4f6f8;
     --gray: #667085;
 }
-    
-}
 
 * {
     box-sizing: border-box;
@@ -59,18 +57,6 @@ nav a {
 nav a:hover {
     color: var(--light-gold);
 }
-.hero {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(11, 31, 58, 0.96) 0%,
-            rgba(11, 31, 58, 0.78) 38%,
-            rgba(11, 31, 58, 0.28) 68%,
-            rgba(11, 31, 58, 0.08) 100%
-        ),
-        url("../images/Hero-truck.png")
-        58% center / cover no-repeat;
-}
 
 .hero {
     min-height: 620px;
@@ -79,7 +65,16 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     color: var(--white);
- 
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 31, 58, 0.96) 0%,
+            rgba(11, 31, 58, 0.78) 38%,
+            rgba(11, 31, 58, 0.28) 68%,
+            rgba(11, 31, 58, 0.08) 100%
+        ),
+        url("../images/Hero-truck.png") 58% center / cover no-repeat;
+}
 
 .hero h2 {
     max-width: 900px;
@@ -93,24 +88,6 @@ nav a:hover {
     max-width: 850px;
     color: #eeeeee;
     font-size: clamp(1.05rem, 2vw, 1.35rem);
-}
-
-@media (max-width: 700px) {
-    header {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    nav {
-        gap: 15px;
-    }
-
-    .hero {
-        min-height: 560px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
 }
 
 .hero-buttons {
@@ -155,13 +132,6 @@ nav a:hover {
 .secondary-button:hover {
     background: var(--white);
     color: var(--navy);
-}
-
-@media (max-width: 560px) {
-    .hero-buttons,
-    .hero-buttons a {
-        width: 100%;
-    }
 }
 
 .services-section {
@@ -241,22 +211,6 @@ nav a:hover {
 .service-card p {
     color: var(--gray);
     font-size: 0.98rem;
-}
-
-@media (max-width: 850px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 560px) {
-    .services-section {
-        padding: 70px 5%;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .why-section {
@@ -340,27 +294,6 @@ nav a:hover {
     color: #d3d3d3;
 }
 
-@media (max-width: 850px) {
-    .why-container {
-        grid-template-columns: 1fr;
-    }
-
-    .quote-card {
-        max-width: 650px;
-    }
-}
-
-@media (max-width: 560px) {
-    .why-section {
-        padding: 75px 5%;
-    }
-
-    .quote-card {
-        padding: 32px;
-        box-shadow: 10px 10px 0 var(--gold);
-    }
-}
-
 .quote-card .primary-button {
     display: inline-block;
     margin-top: 10px;
@@ -370,12 +303,12 @@ nav a:hover {
     text-decoration: none;
     font-weight: 700;
     border-radius: 10px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .quote-card .primary-button:hover {
     transform: translateY(-2px);
-    opacity: .9;
+    opacity: 0.9;
 }
 
 .projects-section {
@@ -401,9 +334,7 @@ nav a:hover {
     background: var(--white);
     border-radius: 10px;
     box-shadow: 0 16px 38px rgba(7, 20, 38, 0.11);
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
@@ -425,13 +356,13 @@ nav a:hover {
 .project-one {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/chairs-in-truck.jpeg")
+        url("../images/chairs-in-truck.jpeg");
 }
 
 .project-two {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/loading-fridge-solo.jpeg")
+        url("../images/loading-fridge-solo.jpeg");
 }
 
 .project-three {
@@ -480,22 +411,6 @@ nav a:hover {
 .project-content > p:last-child {
     color: var(--gray);
     font-size: 0.96rem;
-}
-
-@media (max-width: 850px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 560px) {
-    .projects-section {
-        padding: 72px 5%;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .reviews {
@@ -570,9 +485,7 @@ nav a:hover {
     border-radius: 10px;
     font-weight: 800;
     text-decoration: none;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .review-box .primary-button:hover {
@@ -596,27 +509,6 @@ nav a:hover {
     color: var(--white);
     font-weight: 800;
     text-align: center;
-}
-
-@media (max-width: 760px) {
-    .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 560px) {
-    .reviews {
-        padding: 72px 5%;
-    }
-
-    .review-box {
-        padding: 30px 22px;
-        box-shadow: 10px 10px 0 var(--gold);
-    }
-
-    .trust-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .quote-section {
@@ -711,11 +603,12 @@ nav a:hover {
 
 .form-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 17px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px 32px;
 }
 
 .form-group {
+    min-width: 0;
     margin-bottom: 18px;
 }
 
@@ -733,7 +626,7 @@ nav a:hover {
     width: 100%;
     padding: 14px;
     background: var(--white);
-    border: 2px solid transparent;
+    border: 1px solid #cbd3df;
     border-radius: 7px;
     color: var(--charcoal);
     outline: none;
@@ -779,16 +672,19 @@ nav a:hover {
     color: var(--deep-navy);
     font-weight: 900;
     cursor: pointer;
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .quote-submit:hover {
     background: var(--light-gold);
     transform: translateY(-3px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+.quote-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
 }
 
 .form-disclaimer {
@@ -800,62 +696,6 @@ nav a:hover {
 }
 
 .form-status {
-    margin-top: 12px;
-    color: var(--light-gold);
-    font-weight: 800;
-    text-align: center;
-}
-
-@media (max-width: 900px) {
-    .quote-container {
-        grid-template-columns: 1fr;
-    }
-
-    .quote-intro {
-        position: static;
-    }
-}
-
-@media (max-width: 560px) {
-    .quote-section {
-        padding: 75px 5%;
-    }
-
-    .quote-benefits,
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .quote-form {
-        padding: 27px 21px;
-        box-shadow: 10px 10px 0 var(--gold);
-    }
-}
-
-@media (min-width: 561px) {
-    .form-row {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* Clearly separate paired form fields */
-.form-row {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    column-gap: 32px !important;
-}
-
-.form-row > .form-group {
-    min-width: 0;
-}
-
-.form-row .form-group input,
-.form-row .form-group select {
-    width: 100%;
-    border: 1px solid #cbd3df;
-}
-
-.form-status {
     min-height: 24px;
     margin-top: 16px;
     padding: 0;
@@ -864,41 +704,6 @@ nav a:hover {
     text-align: center;
 }
 
-.form-status.success {
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid var(--gold);
-    border-radius: 8px;
-    color: var(--white);
-}
-.form-status.success h3 {
-    font-size: 2.4rem;
-    color: var(--gold);
-    margin-bottom: 18px;
-    font-weight: 800;
-}
-
-.form-status.success p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin-bottom: 22px;
-    font-weight: 500;
-}
-
-.form-status.success strong {
-    color: var(--gold);
-    font-weight: 800;
-}
-
-.form-status.success a {
-    color: var(--gold);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.form-status.success a:hover {
-    text-decoration: underline;
-}
 .form-status.error {
     padding: 14px;
     background: rgba(180, 30, 30, 0.18);
@@ -907,13 +712,6 @@ nav a:hover {
     color: #ffd4d4;
 }
 
-.quote-submit:disabled {
-    cursor: not-allowed;
-    opacity: 0.7;
-    transform: none;
-}
-
-/* Premium quote confirmation message */
 .form-status.success {
     padding: 32px 26px;
     background: #233a59;
@@ -999,7 +797,86 @@ nav a:hover {
     color: var(--gold);
 }
 
+@media (max-width: 900px) {
+    .quote-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-intro {
+        position: static;
+    }
+}
+
+@media (max-width: 850px) {
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-card {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 760px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
 @media (max-width: 560px) {
+    .hero-buttons,
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .services-section,
+    .projects-section,
+    .reviews,
+    .quote-section {
+        padding: 72px 5%;
+    }
+
+    .why-section {
+        padding: 75px 5%;
+    }
+
+    .services-grid,
+    .projects-grid,
+    .trust-grid,
+    .quote-benefits,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-card,
+    .review-box,
+    .quote-form {
+        padding: 30px 22px;
+        box-shadow: 10px 10px 0 var(--gold);
+    }
+
     .form-status.success {
         padding: 26px 18px;
     }
