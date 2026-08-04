@@ -72,7 +72,7 @@ nav a:hover {
         58% center / cover no-repeat;
 }
 
-section {
+.hero {
     min-height: 620px;
     padding: 110px 5%;
     display: flex;
@@ -81,7 +81,7 @@ section {
     color: var(--white);
  
 
-section h2 {
+.hero h2 {
     max-width: 900px;
     margin-bottom: 24px;
     font-size: clamp(2.6rem, 7vw, 5.4rem);
@@ -89,7 +89,7 @@ section h2 {
     letter-spacing: -2px;
 }
 
-section p {
+.hero p {
     max-width: 850px;
     color: #eeeeee;
     font-size: clamp(1.05rem, 2vw, 1.35rem);
@@ -105,7 +105,7 @@ section p {
         gap: 15px;
     }
 
-    section {
+    .hero {
         min-height: 560px;
         padding-top: 80px;
         padding-bottom: 80px;
