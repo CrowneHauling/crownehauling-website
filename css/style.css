@@ -356,39 +356,35 @@ nav a:hover {
 .project-one {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/chairs-in-truck.jpeg");
+        url("../images/tv-delivery.jpeg");  
 }
 
 .project-two {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/loading-fridge-solo.jpeg");
+        url("../images/commercial-pallet.jpeg");
 }
 
 .project-three {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80");
+        url("../images/furniture-delivery.jpeg");
 }
 
 .project-four {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=80");
+     url("../images/drywall loaded 2.jpeg");       
 }
 
 .project-five {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80");
+    url("../images/dresser-delivery.jpeg");    
 }
 
-.project-six {
-    background-image:
-        linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=1000&q=80");
-}
 
+     
 .project-content {
     padding: 26px;
 }
