@@ -943,3 +943,276 @@ nav a:hover {
         gap: 32px;
     }
 }
+
+/* ================================
+   FURNITURE DELIVERY SERVICE PAGE
+================================ */
+
+.site-header {
+    background: var(--navy);
+    border-bottom: 2px solid var(--gold);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand {
+    color: var(--white);
+    text-decoration: none;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    font-weight: 800;
+}
+
+.service-hero {
+    min-height: 620px;
+    padding: 110px 5%;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 31, 58, 0.96) 0%,
+            rgba(11, 31, 58, 0.82) 42%,
+            rgba(11, 31, 58, 0.30) 72%,
+            rgba(11, 31, 58, 0.10) 100%
+        ),
+        url("../images/furniture-truckload.jpeg") center / cover no-repeat;
+}
+
+.service-hero-content {
+    max-width: 850px;
+}
+
+.service-hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.98;
+    margin: 18px 0 28px;
+    letter-spacing: -2px;
+}
+
+.service-hero p:not(.section-label) {
+    max-width: 760px;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    margin-bottom: 34px;
+    color: #eeeeee;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    padding: 15px 28px;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 7px;
+}
+
+.btn-primary:hover {
+    background: var(--light-gold);
+}
+
+.service-page-section {
+    padding: 100px 5%;
+}
+
+.service-page-alt {
+    background: var(--light-gray);
+}
+
+.service-page-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.service-page-container h2 {
+    max-width: 950px;
+    font-size: clamp(2.3rem, 5vw, 4.6rem);
+    line-height: 1.05;
+    margin: 14px 0 28px;
+}
+
+.service-lead {
+    max-width: 900px;
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+.service-feature-grid {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-feature {
+    background: var(--white);
+    padding: 32px;
+    border-top: 5px solid var(--gold);
+    border-radius: 10px;
+    box-shadow: 0 16px 35px rgba(11, 31, 58, 0.08);
+}
+
+.service-feature h3 {
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+.service-feature p {
+    color: var(--gray);
+}
+
+.service-photo-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.service-photo-grid figure {
+    margin: 0;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 16px 35px rgba(11, 31, 58, 0.10);
+}
+
+.service-photo-grid img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-photo-grid figcaption {
+    padding: 20px 24px;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.service-steps {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.service-step {
+    background: var(--white);
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.service-step span {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 50%;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.service-step h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.service-step p {
+    color: var(--gray);
+}
+
+.service-cta {
+    padding: 100px 5%;
+    background: var(--navy);
+    color: var(--white);
+}
+
+.service-cta h2 {
+    max-width: 1000px;
+    font-size: clamp(2.5rem, 5vw, 4.8rem);
+    line-height: 1.05;
+    margin: 16px 0 26px;
+}
+
+.service-cta p:not(.section-label) {
+    max-width: 850px;
+    font-size: 1.2rem;
+    color: #eeeeee;
+    margin-bottom: 32px;
+}
+
+footer {
+    background: #071426;
+    color: var(--white);
+    text-align: center;
+    padding: 28px 5%;
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .service-feature-grid,
+    .service-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .service-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-hero {
+        min-height: 540px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-page-section,
+    .service-cta {
+        padding: 72px 5%;
+    }
+
+    .service-photo-grid img {
+        height: 300px;
+    }
+
+    .service-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+    }
+}
+
+.service-page-container h2 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    max-width: 1050px;
+}
+
+/* Marketplace Delivery Page Hero */
+.marketplace-hero {
+    background-image:
+        linear-gradient(rgba(11, 31, 58, 0.78), rgba(11, 31, 58, 0.78)),
+        url("../images/dresser-delivery.jpeg");
+}
+
+.appliance-hero {
+    background-image:
+        linear-gradient(rgba(11, 31, 58, 0.78), rgba(11, 31, 58, 0.78)),
+        url("../images/loading-fridge-solo.jpeg");
+}
