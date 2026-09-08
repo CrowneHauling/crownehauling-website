@@ -1223,3 +1223,17 @@ footer {
         linear-gradient(rgba(11, 31, 58, 0.78), rgba(11, 31, 58, 0.78)),
         url("../images/furniture-truckload.jpeg");
 }
+
+.service-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--gold);
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.service-link:hover {
+    transform: translateX(4px);
+    opacity: 0.85;
+}
