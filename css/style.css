@@ -1218,6 +1218,13 @@ footer {
         url("../images/loading-fridge-solo.jpeg");
 }
 
+/* Contractor Delivery Page Hero */
+.contractor-hero {
+    background-image:
+        linear-gradient(rgba(11, 31, 58, 0.78), rgba(11, 31, 58, 0.78)),
+        url("../images/commercial-pallet.jpeg");
+}
+
 /* Junk Removal Page Hero */
 .junk-hero {
     background-image:
