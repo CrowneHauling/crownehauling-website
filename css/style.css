@@ -1225,6 +1225,13 @@ footer {
         url("../images/commercial-pallet.jpeg");
 }
 
+/* Small Moves Page Hero */
+.small-moves-hero {
+    background-image:
+        linear-gradient(rgba(11, 31, 58, 0.78), rgba(11, 31, 58, 0.78)),
+        url("../images/dresser-delivery.jpeg");
+}
+
 /* Junk Removal Page Hero */
 .junk-hero {
     background-image:
