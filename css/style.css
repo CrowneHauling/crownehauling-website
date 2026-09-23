@@ -357,7 +357,7 @@ nav a:hover {
 .project-one {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/tv-delivery.jpeg");  
+        url("../images/tv-delivery.jpeg");
 }
 
 .project-two {
@@ -369,23 +369,23 @@ nav a:hover {
 .project-three {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-        url("../images/furniture-truckload.jpeg");   
+        url("../images/furniture-truckload.jpeg");
 }
 
 .project-four {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-     url("../images/drywall loaded 2.jpeg");       
+     url("../images/drywall loaded 2.jpeg");
 }
 
 .project-five {
     background-image:
         linear-gradient(rgba(11, 31, 58, 0.12), rgba(11, 31, 58, 0.12)),
-    url("../images/dresser-delivery.jpeg");    
+    url("../images/dresser-delivery.jpeg");
 }
 
 
-     
+
 .project-content {
     padding: 26px;
 }
@@ -1251,4 +1251,51 @@ footer {
 .service-link:hover {
     transform: translateX(4px);
     opacity: 0.85;
+}
+/* Photo quote instructions and text-message button */
+.photo-quote-note {
+  margin: 20px 0;
+  padding: 18px;
+  background: rgba(218, 178, 51, 0.12);
+  border: 1px solid var(--light-gold);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.photo-quote-note h3 {
+  margin: 0 0 8px;
+  color: var(--light-gold);
+  font-size: 1.1rem;
+}
+
+.photo-quote-note p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.photo-quote-note strong {
+  color: var(--light-gold);
+  white-space: nowrap;
+}
+
+.photo-text-link {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 15px 20px;
+  border: 2px solid var(--light-gold);
+  border-radius: 12px;
+  color: var(--light-gold);
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.photo-text-link:hover,
+.photo-text-link:focus {
+  background: var(--light-gold);
+  color: #081d36;
+  transform: translateY(-2px);
 }
